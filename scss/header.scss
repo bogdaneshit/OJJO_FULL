@@ -1,0 +1,128 @@
+.header {
+	width: 100%;
+	padding-top: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.header_nobg {
+    width: 100%;
+	padding-top: 25px;
+    background: $c2;
+    min-height: 105px;
+}
+
+.search_img {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	cursor: pointer;
+	@include block(14px,400,$c1,$ffgil);
+}
+.topnav__links {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+    .burger {
+    	display: none;
+    }
+
+    @include block(14px,400,$c1,$ffgil);
+
+        .hover-yes {
+        	color: $c1;
+        	padding-bottom: 3px;
+	        &:hover {
+	            &:after {
+	                content: "";
+	                display: block;
+	                animation-name: s;
+	                animation-duration: 0.5s;
+	                animation-timing-function: ease-in-out;
+	                margin: 0 auto;
+	                padding-top: 2px;
+	                border-bottom: 1px solid $c1;
+	              }
+	        }
+	    }    
+}
+
+@keyframes s{
+
+    0%{
+        width: 55%;
+    }
+    100%{
+       width: 100%;
+    }
+}
+
+// NAV BAR END
+
+.baner__bg {
+	width: 100%;
+	min-height: 100vh;
+	background: url('../images/bgc.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.baner__h1 {
+	padding-top: 600px; 
+	text-align: center;
+	@include block(36px,700,$c1,$ffnoto);
+
+}
+
+.baner__button {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.baner-btn {
+
+	@include block(18px,500,$c1,$ffgil);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	background: $c2;
+	border: 1px solid #fff;
+	padding: 15px 35px;
+	transition-duration: 1s;
+
+	&:hover {
+		font-size: 20px;
+	}
+
+    a {
+        @include block(18px,500,$c1,$ffgil);
+    }
+}
+
+.line__baner {
+	width: 100%;
+	border-bottom: 1px solid $c1;
+	margin-top: 80px;
+}
+
+.baner__img-down {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+
+	img {
+		border-right: 1px solid $c1;
+		padding-right: 15px;
+
+		&:last-child {
+			border: 0;
+			padding-right: 0;
+		}
+	}
+
+}
+

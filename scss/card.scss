@@ -1,0 +1,163 @@
+
+
+.product_card-flex {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sub_imgs {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product_card-right {
+
+    .product_card-right_container {
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+    .product_card-outborder {
+        padding: 10px;
+        border: 1px solid #D6D6D6;
+    }
+    
+    .product_card-outborder_content {
+        padding: 0 10px;
+        border: 1px solid #D6D6D6;
+    }
+
+    .product_card-title {
+        margin-top: 40px;
+        @include block(24px,400,$c2,$ffgil); 
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        span {
+            letter-spacing: 0;
+            font-family: 'Mea Culpa', cursive; 
+        }
+    }
+
+    .product_card-navigation {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        .product_card-navigation_item {
+            display: flex;
+            gap: 15px;
+            @include block(14px,400,$c3,$ffgil); 
+        }
+    }
+
+    .product_card-description {
+        margin-top: 30px;
+        line-height: 150%;
+        @include block(14px,400,$c2,$ffgil);
+    }
+
+    .product_card-price {
+        margin-top: 30px;
+        @include block(24px,600,$c2,$ffnoto);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .product_card-buttons {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .product_card-buy {
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            background-color: $c2;
+            padding: 10px 20px;
+            @include block(18px,400,$c1,$ffgil);
+
+            transition-duration: 0.5s;
+        
+            &:hover {
+                opacity: 0.9;
+                box-shadow: 0 0 10px $c2;
+                transition-duration: 0.5s;
+            }
+        }
+
+        .product_card-to_cart {
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border: 1px solid $c2;
+            background: 0;
+            padding: 10px 20px;
+            @include block(18px,400,$c2,$ffgil);
+
+            transition-duration: 0.5s;
+        
+            &:hover {
+                opacity: 0.9;
+                box-shadow: 0 0 10px $c2;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.katalog_card-block {
+    text-align: center;
+
+    .katalog_subtitle {
+        margin-top: 125px;
+        @include block(21px,400,$c2,$ffgil); 
+    }
+
+    .katalog_title {
+        margin-top: 15px;
+        @include block(30px,700,$c2,$ffgil); 
+    }
+}
+
+.nav_line {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    @include block(14px,400,$c2,$ffgil);
+
+    .undrline {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+

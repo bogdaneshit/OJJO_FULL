@@ -1,0 +1,43 @@
+.contacts-title {
+    margin-top: 60px;
+    @include block(24px,400,$c2,$ffgil);
+    letter-spacing: 0.1em; 
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contacts_contacts-line {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    h3 {
+        @include block(18px,600,$c2,$ffgil);
+        margin-bottom: 25px;
+    }
+
+    span {
+        @include block(14px,400,$c2,$ffgil); 
+        margin-left: 15px;
+    }
+
+    .mt15__contact {
+        margin-top: 15px;
+    }
+
+    .flex-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.lineline {
+    margin: 60px 0;
+}
+
+.map__block {
+    text-align: center;
+}

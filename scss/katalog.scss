@@ -1,0 +1,149 @@
+@import "varsmixins.scss";
+
+.katalog_items {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.katalog_item {
+    text-align: center;
+
+    p {
+        margin-top: 25px;
+        @include block(16px,400,$c2,$ffgil);
+    }
+
+    h3 {
+        margin-top: 10px;
+        @include block(24px,600,$c2,$ffgil);
+    }
+
+    button {
+        margin-top: 25px;
+        background: $c2;
+        padding: 10px 20px;
+        text-align: center;
+        @include block(18px,400,$c1,$ffgil);
+		transition-duration: 0.5s;
+        
+        &:hover {
+			opacity: 0.9;
+			box-shadow: 0 0 10px $c2;
+			transition-duration: 0.5s;
+		}
+    }
+}
+
+.show_more {
+    text-align: center;
+}
+.show_more-btn {
+    padding: 15px 35px;
+    background: $c2;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    @include block(21px,500,$c1,$ffgil);
+    position: relative;
+		transition-duration: 0.5s;
+        
+        &:hover {
+			opacity: 0.9;
+			box-shadow: 0 0 10px $c2;
+			transition-duration: 0.5s;
+		}
+		&:active {
+			top: 3px;
+			transition-duration: 0.3s;
+		}
+}
+
+.line_katalog {
+    width: 100%;
+    border-bottom: 1px solid $c2;
+    opacity: 0.5;
+}
+
+.footer__last-line {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 100px;
+}
+
+.footer__last-line {
+    .seo-text-block {
+        padding: 0 100px;
+        @include block(16px,400,$c2,$ffgil); 
+    }
+
+    h3 {
+        margin-top: 30px;
+        @include block(18px,400,$c2,$ffgil); 
+        text-transform: uppercase;
+        text-decoration: dashed underline;
+        cursor: pointer;
+    }
+
+    .icon-item {
+
+        text-align: center;
+        @include block(16px,400,$c2,$ffgil);
+        p {
+            margin-top: 30px;
+        }
+        img {
+            max-width: 75px;
+            min-height: 75px;
+        }
+        
+    }
+}
+
+
+.icon_list {
+    text-align: center;
+}
+.icon_list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+
+}
+.icon_list-bot {
+    margin-top: 30px;
+}
+
+.opacity2 {
+    opacity: 0.9;
+}
+.opacity3 {
+    opacity: 0.8;
+}
+.opacity4 {
+    opacity: 0.7;
+}
+.opacity5 {
+    opacity: 0.6;
+}
+.opacity6 {
+    opacity: 0.5;
+}
+.opacity7 {
+    opacity: 0.4;
+}
+.opacity8 {
+    opacity: 0.3;
+}
+.opacity9 {
+    opacity: 0.2;
+}
+.opacity10 {
+    opacity: 0.1;
+}
